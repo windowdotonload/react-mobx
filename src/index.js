@@ -8,12 +8,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { observable, action } from 'mobx';
-import { observer } from 'mobx-react';
+import Store from './mobx'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App store={new Store()} />
   </React.StrictMode>,
   document.getElementById('root')
 );
