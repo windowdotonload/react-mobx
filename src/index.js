@@ -1,8 +1,15 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: windowdotonload
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { observable, action } from 'mobx';
+import { observer } from 'mobx-react';
 
 ReactDOM.render(
   <React.StrictMode>
